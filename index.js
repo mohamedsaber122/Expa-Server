@@ -2,7 +2,7 @@ const express = require("express"); // express application
 // require("dotenv").config(); // use the env variables
 const mongoose = require("mongoose");
 const path = require("path");
-const router = require("./routes/index.routes"); // used to handle routes
+const router = require("./src/routes/index.routes"); // used to handle routes
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
@@ -10,7 +10,7 @@ const app = express();
 const PORT = 3001;
 app.use(express.json());
 app.use(express.json({ limit: "50mb" }));
-app.use(
+app.use(-
   cors({
     origin: ["http://localhost:3001/registration"],
   })
