@@ -5,6 +5,8 @@ const SendDonation = require("../controllers/SendDonation");
 const adminSignin = require("../controllers/adminSignin");
 const getProject = require("../controllers/getProject");
 const getUser = require("../controllers/getUser");
+const getAdmin = require("../controllers/getAdmin");
+const getUsersignin = require("../controllers/getUsersignin");
 
 const router = express.Router();
 
@@ -14,5 +16,7 @@ router.post("/SendDonation", SendDonation);
 router.post("/adminSignin", adminSignin);
 router.post("/getProject", getProject);
 router.post("/getUser", getUser);
+router.post("/getAdmin", getAdmin);
+router.post("/getUsersignin", getUsersignin);
 
 module.exports = router;
