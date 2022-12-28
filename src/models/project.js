@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 
-const ProjectSchema = new mongoose.Schema({
+const projectSchema = new mongoose.Schema({
     ProjectName: {
         type: String,
         required: true,
@@ -19,14 +19,11 @@ const ProjectSchema = new mongoose.Schema({
         type: Date,
         required:true
     },
-    Country: {
+    country: {
         type: String,
         required:true
     },
-    // ProjectDate: {
-    //     type: String,
-    //     required:true
-    // }
+  
 });
 
-module.exports = mongoose.model("Project", ProjectSchema);
+module.exports = mongoose.model("Project", projectSchema);
