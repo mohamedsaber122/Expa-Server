@@ -19,6 +19,10 @@ const ProjectSchema = new mongoose.Schema({
         type: Date,
         required:true
     },
+    Country: {
+        type: String,
+        required:true
+    },
     // ProjectDate: {
     //     type: String,
     //     required:true

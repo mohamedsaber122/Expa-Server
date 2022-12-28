@@ -8,6 +8,7 @@ const addProject = async(req,res)=>{
         ProjectFees: body.ProjectFees,
         ProjectDate:body.ProjectDate,
         timestamp:new Date(),
+        Country: body.Country,
       
 
         
