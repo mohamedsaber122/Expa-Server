@@ -10,11 +10,11 @@ const app = express();
 const PORT = 3001;
 app.use(express.json());
 app.use(express.json({ limit: "50mb" }));
-//app.use(-
-//cors({
-//origin: ["http://localhost:3001/registration"],
-//})
-//);
+//https://expa-server.onrender.com/adminSignin
+
+app.use(cors({
+  origin:["https://harmonious-donut-522662.netlify.app", "https://harmonious-donut-522662.netlify.app/sign-in"]
+}));
 app.use(router);
 const uri =
   "mongodb+srv://M_Saber:jHokLaTlZQnEbA8C@cluster0.xaphthb.mongodb.net/?retryWrites=true&w=majority";
