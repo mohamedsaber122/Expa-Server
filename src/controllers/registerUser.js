@@ -8,6 +8,7 @@ const registerUser= async(req,res)=>{
         phoneNumber: body.phoneNumber,
         password: body.password,
         country: body.country,
+        role:body.role,
     });
     await newVolunteer.save();
     res.send('New User Saved!');
