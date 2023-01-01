@@ -13,7 +13,7 @@ app.use(express.json({ limit: "50mb" }));
 //https://expa-server.onrender.com/adminSignin
 
 app.use(cors({
-  origin:["https://harmonious-donut-522662.netlify.app", "https://harmonious-donut-522662.netlify.app/sign-in"]
+  origin:["https://agile-expa.netlify.app", "https://agile-expa.netlify.app/sign-in"]
 }));
 app.use(router);
 const uri =
